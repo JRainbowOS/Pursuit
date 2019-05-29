@@ -28,15 +28,22 @@ class Mouse:
     
     def moveAwayFromCat(self, catTheta, dt):
         angle = self.angleAwayFromCat(catTheta)
-        dr = dr
-        dTheta = dTheta
-        pass
+        # Resorting to Cartesians...
+        dx = - self.speed * dt * np.sin(angle) - self.r * np.sin(self.th)
+        dy = self.speed * dt * np.cos(angle) + self.r * np.cos(self.th)
+        
+        newTh = np.arctan2(dx, dy) % (2 * np.pi)
+        newR = np.sqrt(dx ** 2 + dy ** 2)
+        return newTh, newR
     
     
 def main():
-    myMouse = Mouse(0.5, 5)
-    angle = myMouse.angleAwayFromCat(5.5)
+    myMouse = Mouse(0.5, 3 * np.pi / 2)
+    angle = myMouse.angleAwayFromCat(0)
+    newTh, newR = myMouse.moveAwayFromCat(np.pi, 0.1)
     print(angle)
+    print(newTh, newR)
+
     
 if __name__ == '__main__':
     main()

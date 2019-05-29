@@ -47,7 +47,7 @@ class Cat:
         Returns new theta position of cat after time interval dt
         """
         direction = self.calcDirection(mouseTheta)
-        dTheta = (dt * self.speed )/ self.radius
+        dTheta = (dt * self.speed ) / self.radius
         newTheta = self.theta + direction * dTheta
         return newTheta
     
