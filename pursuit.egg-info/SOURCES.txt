@@ -1,0 +1,8 @@
+README.md
+setup.py
+pursuit/__init__.py
+pursuit/game.py
+pursuit.egg-info/PKG-INFO
+pursuit.egg-info/SOURCES.txt
+pursuit.egg-info/dependency_links.txt
+pursuit.egg-info/top_level.txt
