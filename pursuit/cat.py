@@ -5,8 +5,8 @@ from utils import make_unit_vector
 
 class Cat(Pursuer):
 
-    SPEED = 0.5
-    SPEED_INC = 0
+    SPEED = 0
+    SPEED_INC = 0.1
 
     def __init__(self, initial_position_x, initial_position_y):
         self.current_position_x = initial_position_x

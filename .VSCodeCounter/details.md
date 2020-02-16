@@ -1,10 +1,10 @@
 # Details
 
-Date : 2020-02-16 11:49:16
+Date : 2020-02-16 12:14:49
 
 Directory c:\Users\jacob\Documents\Repos\Pursuit
 
-Total : 20 files,  320 codes, 36 comments, 118 blanks, all 474 lines
+Total : 20 files,  337 codes, 38 comments, 124 blanks, all 499 lines
 
 [summary](results.md)
 
@@ -18,8 +18,8 @@ Total : 20 files,  320 codes, 36 comments, 118 blanks, all 474 lines
 | [build/lib/pursuit/game.py](/build/lib/pursuit/game.py) | Python | 0 | 0 | 1 | 1 |
 | [pursuit/__init__.py](/pursuit/__init__.py) | Python | 0 | 0 | 1 | 1 |
 | [pursuit/cat.py](/pursuit/cat.py) | Python | 48 | 0 | 16 | 64 |
-| [pursuit/chase.py](/pursuit/chase.py) | Python | 27 | 0 | 11 | 38 |
-| [pursuit/game.py](/pursuit/game.py) | Python | 13 | 0 | 5 | 18 |
+| [pursuit/chase.py](/pursuit/chase.py) | Python | 43 | 0 | 17 | 60 |
+| [pursuit/game.py](/pursuit/game.py) | Python | 14 | 2 | 5 | 21 |
 | [pursuit/generator.py](/pursuit/generator.py) | Python | 26 | 3 | 5 | 34 |
 | [pursuit/mouse.py](/pursuit/mouse.py) | Python | 55 | 0 | 17 | 72 |
 | [pursuit/pursued.py](/pursuit/pursued.py) | Python | 11 | 0 | 8 | 19 |

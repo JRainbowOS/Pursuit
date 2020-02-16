@@ -32,8 +32,16 @@ class Chase(Game):
             self.chaser_trace.append([chaser_x, chaser_y])
 
     def display(self):
-        pass
+        chased_x = [pos[0] for pos in self.chased_trace]
+        chased_y = [pos[1] for pos in self.chased_trace]
 
+        chaser_x = [pos[0] for pos in self.chaser_trace]
+        chaser_y = [pos[1] for pos in self.chaser_trace]
+
+        plt.plot(chased_x, chased_y)
+        plt.plot(chaser_x, chaser_y)
+
+        plt.show()
     
     
 def main():
@@ -44,7 +52,9 @@ def main():
     muss = Mouse(*MOUSE_START)
 
     chase = Chase(puss, muss)
-    chase.pursue(10)
+    chase.pursue(100)
+
+    chase.display()
 
 if __name__ == '__main__':
     main()
