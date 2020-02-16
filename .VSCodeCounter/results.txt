@@ -1,0 +1,53 @@
+Date : 2020-02-16 11:04:25
+Directory : c:\Users\jacob\Documents\Repos\Pursuit
+Total : 19 files,  278 codes, 36 comments, 109 blanks, all 423 lines
+
+Languages
++------------------+------------+------------+------------+------------+------------+
+| language         | files      | code       | comment    | blank      | total      |
++------------------+------------+------------+------------+------------+------------+
+| Python           |         16 |        267 |         36 |        103 |        406 |
+| Markdown         |          1 |          8 |          0 |          5 |         13 |
+| Ini              |          1 |          3 |          0 |          0 |          3 |
+| pip requirements |          1 |          0 |          0 |          1 |          1 |
++------------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                 | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                    |         19 |        278 |         36 |        109 |        423 |
+| archive                                                              |          2 |         72 |         29 |         25 |        126 |
+| build                                                                |          2 |          0 |          0 |          2 |          2 |
+| build\lib                                                            |          2 |          0 |          0 |          2 |          2 |
+| build\lib\pursuit                                                    |          2 |          0 |          0 |          2 |          2 |
+| pursuit                                                              |          8 |        153 |          3 |         62 |        218 |
+| tests                                                                |          3 |         34 |          4 |         11 |         49 |
+| tests\unit                                                           |          3 |         34 |          4 |         11 |         49 |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| filename                                                             | language         | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| c:\Users\jacob\Documents\Repos\Pursuit\README.md                     | Markdown         |          8 |          0 |          5 |         13 |
+| c:\Users\jacob\Documents\Repos\Pursuit\archive\cat.py                | Python           |         42 |         21 |         12 |         75 |
+| c:\Users\jacob\Documents\Repos\Pursuit\archive\mouse.py              | Python           |         30 |          8 |         13 |         51 |
+| c:\Users\jacob\Documents\Repos\Pursuit\build\lib\pursuit\__init__.py | Python           |          0 |          0 |          1 |          1 |
+| c:\Users\jacob\Documents\Repos\Pursuit\build\lib\pursuit\game.py     | Python           |          0 |          0 |          1 |          1 |
+| c:\Users\jacob\Documents\Repos\Pursuit\pursuit\__init__.py           | Python           |          0 |          0 |          1 |          1 |
+| c:\Users\jacob\Documents\Repos\Pursuit\pursuit\cat.py                | Python           |         17 |          0 |          8 |         25 |
+| c:\Users\jacob\Documents\Repos\Pursuit\pursuit\chase.py              | Python           |         21 |          0 |         11 |         32 |
+| c:\Users\jacob\Documents\Repos\Pursuit\pursuit\game.py               | Python           |         12 |          0 |          5 |         17 |
+| c:\Users\jacob\Documents\Repos\Pursuit\pursuit\generator.py          | Python           |         26 |          3 |          5 |         34 |
+| c:\Users\jacob\Documents\Repos\Pursuit\pursuit\mouse.py              | Python           |         55 |          0 |         17 |         72 |
+| c:\Users\jacob\Documents\Repos\Pursuit\pursuit\pursued.py            | Python           |         11 |          0 |          8 |         19 |
+| c:\Users\jacob\Documents\Repos\Pursuit\pursuit\pursuer.py            | Python           |         11 |          0 |          7 |         18 |
+| c:\Users\jacob\Documents\Repos\Pursuit\pytest.ini                    | Ini              |          3 |          0 |          0 |          3 |
+| c:\Users\jacob\Documents\Repos\Pursuit\requirements.txt              | pip requirements |          0 |          0 |          1 |          1 |
+| c:\Users\jacob\Documents\Repos\Pursuit\setup.py                      | Python           |          8 |          0 |          3 |         11 |
+| c:\Users\jacob\Documents\Repos\Pursuit\tests\unit\__init__.py        | Python           |          0 |          0 |          1 |          1 |
+| c:\Users\jacob\Documents\Repos\Pursuit\tests\unit\test_data.py       | Python           |         25 |          0 |          1 |         26 |
+| c:\Users\jacob\Documents\Repos\Pursuit\tests\unit\test_game.py       | Python           |          9 |          4 |          9 |         22 |
+| Total                                                                |                  |        278 |         36 |        109 |        423 |
++----------------------------------------------------------------------+------------------+------------+------------+------------+------------+

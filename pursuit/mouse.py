@@ -6,13 +6,13 @@ from pursued import Pursued
 class Mouse(Pursued):
 
     SPEED = 1
-    SPEED_INC = 0.1
+    SPEED_INC = 0
     INITIAL_ANGLE = 0
     ANGLE_INC = 0.1
 
-    def __init__(self, current_position_x, current_position_y):
-        self.current_position_x = current_position_x
-        self.current_position_y = current_position_y
+    def __init__(self, initial_position_x, initial_position_y):
+        self.current_position_x = initial_position_x
+        self.current_position_y = initial_position_y
         self.speed = self.speed_generator(Mouse.SPEED, Mouse.SPEED_INC)
         self.angle = self.angle_generator(Mouse.INITIAL_ANGLE, Mouse.ANGLE_INC)
 
@@ -22,7 +22,7 @@ class Mouse(Pursued):
         angle = next(self.angle)
         speed = next(self.speed)
 
-        dx, dy = self.get_movement_vector(angle, speed)
+        dx, dy = self.get_movement_vector(angle, speed, self._dt)
         self.current_position_x += dx
         self.current_position_y += dy        
 
@@ -41,10 +41,10 @@ class Mouse(Pursued):
             speed += increment
 
     @staticmethod
-    def get_movement_vector(angle, speed):
+    def get_movement_vector(angle, speed, dt):
         dx = np.sin(angle)
         dy = np.cos(angle)
-        return [dx * speed, dy * speed]
+        return [dx * speed * dt, dy * speed * dt]
 
 
 
