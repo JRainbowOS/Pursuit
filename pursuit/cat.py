@@ -8,7 +8,7 @@ class Cat(Pursuer):
     SPEED = 0.5
     SPEED_INC = 0
 
-    def __init__(self, initial_position_x, initial_position_y, speed):
+    def __init__(self, initial_position_x, initial_position_y):
         self.current_position_x = initial_position_x
         self.current_position_y = initial_position_y
         self.speed = self.speed_generator(Cat.SPEED, Cat.SPEED_INC)
@@ -50,15 +50,12 @@ class Cat(Pursuer):
         return [dx * speed * dt, dy * speed * dt]
         
         
-
-
 def main():
 
     START_POSITION = [0,0]
-    PURSUED_POSITION = [100,100]
-    PURSUER_SPEED = 1
+    PURSUED_POSITION = [10,10]
 
-    lola = Cat(*START_POSITION, PURSUER_SPEED)
+    lola = Cat(*START_POSITION)
     for _ in range(100):
         lola.evolve(*PURSUED_POSITION)
         print(lola.current_position_x, lola.current_position_y)

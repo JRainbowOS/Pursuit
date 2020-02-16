@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 from game import Game
 
 from pursuer import Pursuer
@@ -12,21 +14,25 @@ class Chase(Game):
         self.chaser = chaser
         self.chased = chased
 
-    def pursue(self, num_steps):
-        pass
-
+    def pursue(self, num_steps, display=True):
+        super().pursue(num_steps)
+        print('Child class definition of Pursue')
+        for _ in range(num_steps):
+            self.chased.evolve()
+            chased_x = self.chased.current_position_x
+            chased_y = self.chased.current_position_y
+            self.chaser.evolve(chased_x, chased_y)
     
     
 def main():
     CAT_START = [0, 0]
-    MOUSE_START = [1, 1]
-    CAT_SPEED = 2
-    MOUSE_SPEED = 1
+    MOUSE_START = [10, 10]
 
-    puss = Cat(*CAT_START, CAT_SPEED)
-    muss = Mouse(*MOUSE_START, MOUSE_SPEED)
+    puss = Cat(*CAT_START)
+    muss = Mouse(*MOUSE_START)
 
-    chase = Chase(muss, puss)
+    chase = Chase(puss, muss)
+    chase.pursue(10)
 
 if __name__ == '__main__':
     main()
