@@ -10,6 +10,9 @@ class Game(ABC):
     def __init__(self, chaser: Pursuer, chased: Pursued):
         self.chaser = chaser
         self.chased = chased
+        assert chaser._dt == chased._dt, """
+        Time increments should be the same for chaser and chased
+        """
 
     @abstractmethod
     def pursue(self, num_steps):

@@ -1,7 +1,14 @@
 README.md
 setup.py
 pursuit/__init__.py
+pursuit/cat.py
+pursuit/chase.py
 pursuit/game.py
+pursuit/generator.py
+pursuit/mouse.py
+pursuit/pursued.py
+pursuit/pursuer.py
+pursuit/utils.py
 pursuit.egg-info/PKG-INFO
 pursuit.egg-info/SOURCES.txt
 pursuit.egg-info/dependency_links.txt

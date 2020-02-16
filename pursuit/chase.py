@@ -13,15 +13,27 @@ class Chase(Game):
     def __init__(self, chaser: Pursuer, chased: Pursued):
         self.chaser = chaser
         self.chased = chased
+        self.chased_trace = []
+        self.chaser_trace = []
+        super().__init__(chaser, chased)
 
-    def pursue(self, num_steps, display=True):
+    def pursue(self, num_steps):
         super().pursue(num_steps)
         print('Child class definition of Pursue')
         for _ in range(num_steps):
             self.chased.evolve()
             chased_x = self.chased.current_position_x
             chased_y = self.chased.current_position_y
+            self.chased_trace.append([chased_x, chased_y])
+
             self.chaser.evolve(chased_x, chased_y)
+            chaser_x = self.chaser.current_position_x
+            chaser_y = self.chaser.current_position_y
+            self.chaser_trace.append([chaser_x, chaser_y])
+
+    def display(self):
+        pass
+
     
     
 def main():
