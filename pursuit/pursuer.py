@@ -1,6 +1,9 @@
 from abc import ABC, abstractmethod
 
 class Pursuer(ABC):
+    """
+    Generic pursuer class for chasing pursued
+    """
 
     _dt = 1
 
@@ -12,6 +15,12 @@ class Pursuer(ABC):
 
     @abstractmethod
     def evolve(self, pursued_position_x, pursued_position_y):
-        print('Evolving using parent method')
-
-
+        """
+        Chase pursued object by one time step
+        
+        Arguments:
+            pursued_position_x {float} -- current x position of pursued
+            pursued_position_y {float} -- current y position of pursued
+        """
+        # print('Evolving using parent method')
+        pass

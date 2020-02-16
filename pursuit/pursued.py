@@ -1,6 +1,9 @@
 from abc import ABC, abstractmethod
 
 class Pursued(ABC):
+    """
+    Generic object that is being chased
+    """
 
     _dt = 1
 
@@ -12,7 +15,8 @@ class Pursued(ABC):
 
     @abstractmethod
     def evolve(self):
-        print('Evolving using parent method')
-
-
-
+        """
+        Move forward by one time step
+        """
+        # print('Evolving using parent method')
+        pass

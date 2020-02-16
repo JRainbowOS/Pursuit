@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 from pursued import Pursued
 
 class Mouse(Pursued):
+    """
+    Simple pursued object subclass to be chased by Cat
+    """
 
     SPEED = 1
     SPEED_INC = 0
@@ -18,7 +21,7 @@ class Mouse(Pursued):
 
     def evolve(self):
         super().evolve()
-        print(f'Time step is {self._dt}')
+        # print(f'Time step is {self._dt}')
         angle = next(self.angle)
         speed = next(self.speed)
 
@@ -51,8 +54,6 @@ class Mouse(Pursued):
 def main():
 
     START_POSITION = [0,0]
-    PURSUED_SPEED = 1
-
     rambil = Mouse(*START_POSITION)
     
     s = []

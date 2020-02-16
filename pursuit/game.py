@@ -6,6 +6,9 @@ from pursuer import Pursuer
 from pursued import Pursued
 
 class Game(ABC):
+    """
+    Generic Game Object
+    """
 
     def __init__(self, chaser: Pursuer, chased: Pursued):
         self.chaser = chaser
@@ -16,5 +19,11 @@ class Game(ABC):
 
     @abstractmethod
     def pursue(self, num_steps):
-        print('Parent class definition of Pursue')
+        """
+        Runs a pursuit for num_steps
+        
+        Arguments:
+            num_steps {int} -- Number of time steps to process
+        """
+        # print('Parent class definition of Pursue')
         pass

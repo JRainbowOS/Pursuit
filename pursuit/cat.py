@@ -4,8 +4,11 @@ from pursuer import Pursuer
 from utils import make_unit_vector
 
 class Cat(Pursuer):
+    """
+    Simple chaser subclass
+    """
 
-    SPEED = 0.8
+    SPEED = 0.5
     SPEED_INC = 0.0
 
     def __init__(self, initial_position_x, initial_position_y):
@@ -15,7 +18,7 @@ class Cat(Pursuer):
 
     def evolve(self, pursued_position_x, pursued_position_y):
         super().evolve(pursued_position_x, pursued_position_y)
-        print(f'Time step is {self._dt}')
+        # print(f'Time step is {self._dt}')
         speed = next(self.speed)
 
         dx, dy = self.get_movement_vector(self.current_position_x,

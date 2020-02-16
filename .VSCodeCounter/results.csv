@@ -1,22 +1,21 @@
-filename, language, Ini, Python, Markdown, pip requirements, comment, blank, total
-c:\Users\jacob\Documents\Repos\Pursuit\README.md, Markdown, 0, 0, 8, 0, 0, 5, 13
-c:\Users\jacob\Documents\Repos\Pursuit\archive\cat.py, Python, 0, 42, 0, 0, 21, 12, 75
-c:\Users\jacob\Documents\Repos\Pursuit\archive\mouse.py, Python, 0, 30, 0, 0, 8, 13, 51
+filename, language, Ini, Markdown, Python, pip requirements, comment, blank, total
+c:\Users\jacob\Documents\Repos\Pursuit\README.md, Markdown, 0, 8, 0, 0, 0, 5, 13
+c:\Users\jacob\Documents\Repos\Pursuit\archive\cat.py, Python, 0, 0, 42, 0, 21, 12, 75
+c:\Users\jacob\Documents\Repos\Pursuit\archive\mouse.py, Python, 0, 0, 30, 0, 8, 13, 51
 c:\Users\jacob\Documents\Repos\Pursuit\build\lib\pursuit\__init__.py, Python, 0, 0, 0, 0, 0, 1, 1
 c:\Users\jacob\Documents\Repos\Pursuit\build\lib\pursuit\game.py, Python, 0, 0, 0, 0, 0, 1, 1
 c:\Users\jacob\Documents\Repos\Pursuit\pursuit\__init__.py, Python, 0, 0, 0, 0, 0, 1, 1
-c:\Users\jacob\Documents\Repos\Pursuit\pursuit\cat.py, Python, 0, 48, 0, 0, 0, 16, 64
-c:\Users\jacob\Documents\Repos\Pursuit\pursuit\chase.py, Python, 0, 43, 0, 0, 0, 17, 60
-c:\Users\jacob\Documents\Repos\Pursuit\pursuit\game.py, Python, 0, 14, 0, 0, 2, 5, 21
-c:\Users\jacob\Documents\Repos\Pursuit\pursuit\generator.py, Python, 0, 26, 0, 0, 3, 5, 34
-c:\Users\jacob\Documents\Repos\Pursuit\pursuit\mouse.py, Python, 0, 55, 0, 0, 0, 17, 72
-c:\Users\jacob\Documents\Repos\Pursuit\pursuit\pursued.py, Python, 0, 11, 0, 0, 0, 8, 19
-c:\Users\jacob\Documents\Repos\Pursuit\pursuit\pursuer.py, Python, 0, 11, 0, 0, 0, 7, 18
-c:\Users\jacob\Documents\Repos\Pursuit\pursuit\utils.py, Python, 0, 4, 0, 0, 0, 1, 5
+c:\Users\jacob\Documents\Repos\Pursuit\pursuit\cat.py, Python, 0, 0, 47, 0, 4, 16, 67
+c:\Users\jacob\Documents\Repos\Pursuit\pursuit\chase.py, Python, 0, 0, 85, 0, 25, 29, 139
+c:\Users\jacob\Documents\Repos\Pursuit\pursuit\game.py, Python, 0, 0, 13, 0, 12, 5, 30
+c:\Users\jacob\Documents\Repos\Pursuit\pursuit\mouse.py, Python, 0, 0, 53, 0, 4, 16, 73
+c:\Users\jacob\Documents\Repos\Pursuit\pursuit\pursued.py, Python, 0, 0, 11, 0, 7, 4, 22
+c:\Users\jacob\Documents\Repos\Pursuit\pursuit\pursuer.py, Python, 0, 0, 11, 0, 11, 4, 26
+c:\Users\jacob\Documents\Repos\Pursuit\pursuit\utils.py, Python, 0, 0, 4, 0, 0, 1, 5
 c:\Users\jacob\Documents\Repos\Pursuit\pytest.ini, Ini, 3, 0, 0, 0, 0, 0, 3
 c:\Users\jacob\Documents\Repos\Pursuit\requirements.txt, pip requirements, 0, 0, 0, 0, 0, 1, 1
-c:\Users\jacob\Documents\Repos\Pursuit\setup.py, Python, 0, 8, 0, 0, 0, 3, 11
+c:\Users\jacob\Documents\Repos\Pursuit\setup.py, Python, 0, 0, 8, 0, 0, 3, 11
 c:\Users\jacob\Documents\Repos\Pursuit\tests\unit\__init__.py, Python, 0, 0, 0, 0, 0, 1, 1
-c:\Users\jacob\Documents\Repos\Pursuit\tests\unit\test_data.py, Python, 0, 25, 0, 0, 0, 1, 26
-c:\Users\jacob\Documents\Repos\Pursuit\tests\unit\test_game.py, Python, 0, 9, 0, 0, 4, 9, 22
-Total, -, 3, 326, 8, 0, 38, 124, 499
+c:\Users\jacob\Documents\Repos\Pursuit\tests\unit\test_data.py, Python, 0, 0, 25, 0, 0, 1, 26
+c:\Users\jacob\Documents\Repos\Pursuit\tests\unit\test_game.py, Python, 0, 0, 9, 0, 4, 9, 22
+Total, -, 3, 8, 338, 0, 96, 123, 568
