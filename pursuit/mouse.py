@@ -37,6 +37,13 @@ class Mouse(Pursued):
             angle += increment
 
     @staticmethod
+    def random_angle_generator(initial_angle, max_curvature):
+        angle = initial_angle
+        while True:
+            pass
+
+
+    @staticmethod
     def speed_generator(initial_speed, increment):
         speed = initial_speed
         while True:
