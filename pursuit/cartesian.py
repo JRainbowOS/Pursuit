@@ -7,10 +7,11 @@ class Cartesian2D(Coordinate):
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.position = [self.x, self.y]
+
 
     def __str__(self):
         return f'Cartesian2D({self.x}, {self.y})'
+
 
     def distance_to(self, new_coord):
         assert isinstance(new_coord, Cartesian2D), 'new_coord must also be a Cartesian2D'
@@ -18,12 +19,29 @@ class Cartesian2D(Coordinate):
         return np.sqrt(squared)
 
 
-def main():
-    coord1 = Cartesian2D(1,4)
-    print(coord1)
-    coord2 = Cartesian2D(3,5)
+    def angle_to(self, new_coord):
+        assert isinstance(new_coord, Cartesian2D), 'new_coord must also be a Cartesian2D'
+        dx = new_coord.x - self.x
+        dy = new_coord.y - self.y
+        theta = np.arctan2(dy, dx)
+        return theta
 
-    print(coord1.distance_to(coord2))
+
+    def get_unit_vector(self, new_coord):
+        assert isinstance(new_coord, Cartesian2D), 'new_coord must also be a Cartesian2D'
+        dx = new_coord.x - self.x
+        dy = new_coord.y - self.y
+        norm = np.sqrt(dx ** 2 + dy ** 2)
+        return dx / norm, dy / norm
+
+
+def main():
+    coord1 = Cartesian2D(1,1)
+    print(coord1)
+    coord2 = Cartesian2D(1,0)
+
+    print(coord1.angle_to(coord2))
+    print(coord1.get_unit_vector(coord2))
 
 if __name__ == '__main__':
     main()

@@ -9,9 +9,11 @@ class Coordinate(ABC):
         self.position = position
         super().__init__()
 
+
     @abstractmethod
     def __str__(self):
         pass
+
 
     @abstractmethod
     def distance_to(self, new_position):

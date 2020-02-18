@@ -11,9 +11,10 @@ class Chaser(ABC):
     _dt = 1
 
     def __init__(self, initial_coordinate: Coordinate, initial_speed):
-        self.position = initial_coordinate.position
+        self.position = initial_coordinate
         self.speed = initial_speed
         super().__init__()
+
 
     @abstractmethod
     def step(self, other_coordinate: Coordinate):
