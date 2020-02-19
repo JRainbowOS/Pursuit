@@ -7,8 +7,8 @@ class Mole(Chaser):
     """
     Moles blindly move in a random walk
     """
-    MAX_CURVATURE = np.pi / 2
-    SPEED = 0.5
+    MAX_CURVATURE = np.pi / 3
+    SPEED = 1
 
     def __init__(self, position: Cartesian2D):
         self.position = position

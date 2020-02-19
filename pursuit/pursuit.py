@@ -20,6 +20,9 @@ class Pursuit(Game):
         self.chaser_trace_y = []
 
     def play(self):
+        """
+        Play game until chased is caught by chaser
+        """
         current_chaser_position = self.chaser.position
         current_chased_position = self.chased.position
 
@@ -36,7 +39,13 @@ class Pursuit(Game):
 
         print(f'Pursuit has ended after {steps_taken} steps!')
 
-    def _update_positions(self, chaser_position, chased_position):
+    def _update_positions(self, chaser_position: Cartesian2D, chased_position: Cartesian2D):
+        """Update the positions of the chased and chaser
+        
+        Arguments:
+            chaser_position {Cartesian2D} -- Current position of the chaser
+            chased_position {Cartesian2D} -- Current position of the chased
+        """
         self.chaser.position = chaser_position
         self.chaser_trace_x.append(chaser_position.x)
         self.chaser_trace_y.append(chaser_position.y)
@@ -86,8 +95,8 @@ class Pursuit(Game):
 
         chaser_xdata, chaser_ydata = [], []
         chased_xdata, chased_ydata = [], []
-        ln_chaser, = ax.plot([], [], 'ro')
-        ln_chased, = ax.plot([], [], 'go')
+        ln_chaser, = ax.plot([], [], 'r', linewidth=2, markersize=0)
+        ln_chased, = ax.plot([], [], 'g', linewidth=2, markersize=0)
         time_template = 'time = %.1fs'
         time_text = ax.text(0.05, 0.9, '', transform=ax.transAxes)
 
@@ -116,13 +125,14 @@ class Pursuit(Game):
                       len(self.chaser_trace_x),
                       init_func=init_animation,
                       interval=100,
-                      blit=True)
+                      blit=True,
+                      repeat=False)
         plt.show()
 
 def main():
     REMI_START = Cartesian2D(0, 0)
 
-    FEMI_START = Cartesian2D(100, 100)
+    FEMI_START = Cartesian2D(20, 20)
 
     remi = Rat(REMI_START)
     femi = Mole(FEMI_START)
