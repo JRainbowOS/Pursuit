@@ -15,7 +15,6 @@ class Chaser(ABC):
         self.speed = initial_speed
         super().__init__()
 
-
     @abstractmethod
     def step(self, other_coordinate: Coordinate):
         """

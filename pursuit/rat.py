@@ -11,7 +11,6 @@ class Rat(Chaser):
     def __init__(self, position: Cartesian2D):
         self.position = position
 
-
     def step(self, other_coordinate):
         dx, dy = self._find_displacement(other_coordinate)
         self.position.x += dx
@@ -32,6 +31,7 @@ def main():
     other_coordinate = Cartesian2D(10, 10)
 
     remi = Rat(INITIAL_COORDINATE)
+    print(remi)
     new_coordinate = remi.step(other_coordinate)
     new_coordinate = remi.step(other_coordinate)
 
