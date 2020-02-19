@@ -7,12 +7,12 @@ class Mole(Chaser):
     """
     Moles blindly move in a random walk
     """
-    MAX_CURVATURE = np.pi / 3
+    MAX_CURVATURE = np.pi / 4
     SPEED = 1
 
     def __init__(self, position: Cartesian2D):
         self.position = position
-        self.initial_bearing = 2 * np.pi * np.random.random()
+        self.bearing = 2 * np.pi * np.random.random()
 
     def step(self, other_coordinate):
         dx, dy = self._find_displacement()
@@ -21,9 +21,11 @@ class Mole(Chaser):
         return self.position
 
     def _find_displacement(self):
-        angle = Mole._get_random_angle()
-        dx = Mole._dt * Mole.SPEED * np.cos(angle)
-        dy = Mole._dt * Mole.SPEED * np.sin(angle)
+        angle_inc = Mole._get_random_angle()
+        new_bearing = self.bearing + angle_inc
+        self.bearing = new_bearing
+        dx = Mole._dt * Mole.SPEED * np.cos(new_bearing)
+        dy = Mole._dt * Mole.SPEED * np.sin(new_bearing)
         return dx, dy
 
     @classmethod
