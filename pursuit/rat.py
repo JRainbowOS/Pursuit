@@ -5,7 +5,7 @@ class Rat(Chaser):
     """
     Rats are not afraid of anything and will investigate any chaser / chased
     """
-    PAW_DISTANCE = 1
+    PAW_DISTANCE = 2
     SPEED = 1
 
     def __init__(self, position: Cartesian2D):

@@ -95,8 +95,8 @@ class Pursuit(Game):
 
         chaser_xdata, chaser_ydata = [], []
         chased_xdata, chased_ydata = [], []
-        ln_chaser, = ax.plot([], [], 'r', linewidth=2, markersize=0)
-        ln_chased, = ax.plot([], [], 'g', linewidth=2, markersize=0)
+        ln_chaser, = ax.plot([], [], 'ro', linewidth=2, markersize=1)
+        ln_chased, = ax.plot([], [], 'go', linewidth=2, markersize=1)
         time_template = 'time = %.1fs'
         time_text = ax.text(0.05, 0.9, '', transform=ax.transAxes)
 
@@ -124,7 +124,7 @@ class Pursuit(Game):
                       animate,
                       len(self.chaser_trace_x),
                       init_func=init_animation,
-                      interval=100,
+                      interval=50,
                       blit=True,
                       repeat=False)
         plt.show()
@@ -132,7 +132,7 @@ class Pursuit(Game):
 def main():
     REMI_START = Cartesian2D(0, 0)
 
-    FEMI_START = Cartesian2D(50, 50)
+    FEMI_START = Cartesian2D(100, 100)
 
     remi = Rat(REMI_START)
     femi = Mole(FEMI_START)
