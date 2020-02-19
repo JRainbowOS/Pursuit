@@ -1,10 +1,12 @@
 README.md
 setup.py
 pursuit/__init__.py
+pursuit/cartesian.py
 pursuit/cat.py
 pursuit/chase.py
+pursuit/chaser.py
+pursuit/coordinate.py
 pursuit/game.py
-pursuit/generator.py
 pursuit/mouse.py
 pursuit/pursued.py
 pursuit/pursuer.py

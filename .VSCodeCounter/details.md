@@ -1,10 +1,10 @@
 # Details
 
-Date : 2020-02-16 15:09:00
+Date : 2020-02-18 21:56:50
 
 Directory c:\Users\jacob\Documents\Repos\Pursuit
 
-Total : 19 files,  349 codes, 96 comments, 123 blanks, all 568 lines
+Total : 25 files,  476 codes, 120 comments, 189 blanks, all 785 lines
 
 [summary](results.md)
 
@@ -17,12 +17,18 @@ Total : 19 files,  349 codes, 96 comments, 123 blanks, all 568 lines
 | [build/lib/pursuit/__init__.py](/build/lib/pursuit/__init__.py) | Python | 0 | 0 | 1 | 1 |
 | [build/lib/pursuit/game.py](/build/lib/pursuit/game.py) | Python | 0 | 0 | 1 | 1 |
 | [pursuit/__init__.py](/pursuit/__init__.py) | Python | 0 | 0 | 1 | 1 |
+| [pursuit/cartesian.py](/pursuit/cartesian.py) | Python | 32 | 0 | 15 | 47 |
 | [pursuit/cat.py](/pursuit/cat.py) | Python | 47 | 4 | 16 | 67 |
-| [pursuit/chase.py](/pursuit/chase.py) | Python | 85 | 25 | 29 | 139 |
-| [pursuit/game.py](/pursuit/game.py) | Python | 13 | 12 | 5 | 30 |
-| [pursuit/mouse.py](/pursuit/mouse.py) | Python | 53 | 4 | 16 | 73 |
+| [pursuit/chase.py](/pursuit/chase.py) | Python | 86 | 25 | 29 | 140 |
+| [pursuit/chaser.py](/pursuit/chaser.py) | Python | 12 | 10 | 7 | 29 |
+| [pursuit/coordinate.py](/pursuit/coordinate.py) | Python | 11 | 3 | 8 | 22 |
+| [pursuit/game.py](/pursuit/game.py) | Python | 10 | 8 | 4 | 22 |
+| [pursuit/game_old.py](/pursuit/game_old.py) | Python | 13 | 12 | 5 | 30 |
+| [pursuit/mouse.py](/pursuit/mouse.py) | Python | 58 | 4 | 18 | 80 |
 | [pursuit/pursued.py](/pursuit/pursued.py) | Python | 11 | 7 | 4 | 22 |
 | [pursuit/pursuer.py](/pursuit/pursuer.py) | Python | 11 | 11 | 4 | 26 |
+| [pursuit/pursuit.py](/pursuit/pursuit.py) | Python | 31 | 0 | 18 | 49 |
+| [pursuit/rat.py](/pursuit/rat.py) | Python | 25 | 3 | 12 | 40 |
 | [pursuit/utils.py](/pursuit/utils.py) | Python | 4 | 0 | 1 | 5 |
 | [pytest.ini](/pytest.ini) | Ini | 3 | 0 | 0 | 3 |
 | [requirements.txt](/requirements.txt) | pip requirements | 0 | 0 | 1 | 1 |

@@ -1,16 +1,12 @@
-def add(a, b):
-    return a + b
-
 from abc import ABC, abstractmethod
-from pursuer import Pursuer
-from pursued import Pursued
+from chaser import Chaser
 
 class Game(ABC):
     """
     Generic Game Object
     """
 
-    def __init__(self, chaser: Pursuer, chased: Pursued):
+    def __init__(self, chaser: Chaser, chased: Chaser):
         self.chaser = chaser
         self.chased = chased
         assert chaser._dt == chased._dt, """
@@ -18,12 +14,8 @@ class Game(ABC):
         """
 
     @abstractmethod
-    def pursue(self, num_steps):
+    def play(self):
         """
-        Runs a pursuit for num_steps
-        
-        Arguments:
-            num_steps {int} -- Number of time steps to process
+        Runs one step of the game
         """
-        # print('Parent class definition of Pursue')
         pass
