@@ -132,7 +132,7 @@ class Pursuit(Game):
 def main():
     REMI_START = Cartesian2D(0, 0)
 
-    FEMI_START = Cartesian2D(20, 20)
+    FEMI_START = Cartesian2D(50, 50)
 
     remi = Rat(REMI_START)
     femi = Mole(FEMI_START)
